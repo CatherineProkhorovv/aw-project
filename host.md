@@ -1,7 +1,7 @@
-Número do ADR: 04
-Título: QRmeat
-Data: 2024-03-09
-Responsável: Afonso Carreira & Catherine Prokhorov
+Número do ADR: 04 <br>
+Título: QRmeat <br>
+Data: 2024-03-09 <br>
+Responsável: Afonso Carreira & Catherine Prokhorov 
 
 ## Context and Problem Statement
 
