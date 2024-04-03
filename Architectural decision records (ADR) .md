@@ -17,28 +17,29 @@ Decidimos dividir o sistema em componentes distintos, cada um correspondendo a u
 
 ## Consequences
 
-### Positivos
-#### Flexibilidade e escalabilidade: 
+1. Positivos
+    * Flexibilidade e escalabilidade: 
 A decomposição do sistema em componentes individuais permite escalar e modificar partes específicas do sistema de forma independente, facilitando a adaptação a mudanças nos requisitos e no volume de tráfego.
 
-#### Facilidade de manutenção: 
+    * Facilidade de manutenção: 
 Com cada funcionalidade e micro frontend agindo de forma independente, as atualizações e correções podem ser implementadas de forma mais direcionada e controlada, reduzindo o impacto em outras partes do sistema.
 
-#### Reutilização de componentes: 
+    * Reutilização de componentes: 
 Componentes individuais podem ser reutilizados em diferentes partes do sistema ou até mesmo em projetos futuros, economizando tempo e esforço de desenvolvimento e aumentando a consistência e padronização do código.
 
-#### Desenvolvimento paralelo:
+    * Desenvolvimento paralelo:
 A independência dos componentes permite que equipes de desenvolvimento trabalhem de forma paralela em diferentes partes do sistema, acelerando o desenvolvimento e reduzindo os gargalos.
 
-#### Resiliência e tolerância a falhas:
+    * Resiliência e tolerância a falhas:
 Com a arquitetura distribuída e independente, o sistema pode ser mais resiliente a falhas, já que uma falha em um componente específico não afetará necessariamente todo o sistema.
 
-
-### Negativos:
-#### Complexidade da gestão de múltiplos componentes: 
+2. Negativos:
+    * Complexidade da gestão de múltiplos componentes: 
 Com a decomposição do sistema em componentes individuais, surge a necessidade de gerenciar e coordenar esses componentes de forma eficaz. Isso pode aumentar a complexidade operacional e administrativa.
-#### Possíveis problemas de integração: 
+
+    * Possíveis problemas de integração: 
 A independência dos componentes pode tornar a integração entre mais desafiadora, especialmente quando há mudanças ou atualizações num componente que afetam outros componentes relacionados.
 
-
 ## More Information
+
+Decidimos dividir a nossa aplicação em microfrontends, componentes e viewmodels, que constituem a parte integral do frontend apresentado. Essa abordagem permite uma estruturação mais modular e granular da nossa aplicação, facilitando a manutenção e o desenvolvimento contínuo. Ao adotar essa divisão, podemos garantir uma melhor organização do código e uma separação clara de responsabilidades entre os diferentes elementos do frontend. Isso também nos possibilita escalar e evoluir a nossa aplicação de forma mais eficiente, adaptando-se às mudanças nos requisitos e nas demandas do utilizador.
