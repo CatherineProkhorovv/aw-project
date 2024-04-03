@@ -14,6 +14,6 @@ Decidimos adotar esta arquitetura com o objetivo de desenvolver um sistema robus
 
 ## Decision Outcome
 
-### Consequences
+## Consequences
 
 ## More Information
