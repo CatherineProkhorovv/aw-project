@@ -8,6 +8,8 @@ A crescente preocupação dos consumidores com a qualidade e segurança dos alim
 Este projeto de ADR visa explorar e propor soluções para esses desafios, a fim de criar um aplicativo de QR code de carne que atenda às necessidades e expectativas dos consumidores, ao mesmo tempo em que promove a confiança e a transparência no fornecimento de informações sobre alimentos.
 ## Decision Drivers
 
+Decidimos adotar esta arquitetura com o objetivo de desenvolver um sistema robusto e complexo, que pode ser decomposto em componentes individuais. Essa abordagem permite-nos utilizar cada funcionalidade e micro frontend de forma independente, sem depender de outros elementos. Isso promove a modularidade e facilita a manutenção, oferecendo uma maior flexibilidade e escalabilidade ao sistema.
+
 ## Considered Options
 
 ## Decision Outcome
