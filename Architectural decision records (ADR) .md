@@ -13,7 +13,7 @@ Decidimos adotar esta arquitetura com o objetivo de desenvolver um sistema robus
 
 ## Decision Outcome
 
-Decidimos dividir o sistema em componentes distintos, cada um correspondendo a um microserviço específico. Esta escolha visa facilitar a distribuição eficiente de tarefas entre os membros da equipa e mitigar potenciais conflitos entre os serviços. Ao atribuir tarefas a cada microserviço de forma clara e precisa, evitamos conflitos de integração e garantimos uma implementação mais suave e eficiente. Esta abordagem promove uma melhor distribuição de responsabilidades e competências, resultando em desenvolvimento mais ágil e eficaz.
+Decidimos dividir o sistema em componentes distintos, cada um correspondendo a um micro - frontEnd específico. Esta escolha visa facilitar a distribuição eficiente de tarefas entre os membros da equipa e mitigar potenciais conflitos entre os serviços. Ao atribuir tarefas de forma clara e precisa, evitamos conflitos de integração e garantimos uma implementação mais suave e eficiente. Esta abordagem promove uma melhor distribuição de responsabilidades e competências, resultando em desenvolvimento mais ágil e eficaz.
 
 ## Consequences
 
