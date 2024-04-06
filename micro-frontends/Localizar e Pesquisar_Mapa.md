@@ -1,4 +1,4 @@
 
 |                                Micro-FrontEnd                                |           Responsabilidade            |     
 |:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| ![Alt text](../imagensFE/Imagem3.1.png?raw=true "Imagem3.1") ![Alt text](../imagensFE/Imagem4.png?raw=true "Imagem4") | **Reusability, Single responsibility, Simplicity** <br><br>
+| ![Alt text](../imagensFE/Imagem3.1.png?raw=true "Imagem3.1") ![Alt text](../imagensFE/Imagem4.png?raw=true "Imagem4") | **Reusability, Single responsibility, Simplicity** <br><br> A funcionalidade de "Localizar e Pesquisar" e o recurso do "Mapa", quando implementados com reusabilidade, responsabilidade única e simplicidade, tornam-se eficientes e fáceis de usar. Isso permite sua aplicação em várias partes do sistema, cada componente com uma função clara, garantindo uma experiência intuitiva e sem complicações para o utilizador.
