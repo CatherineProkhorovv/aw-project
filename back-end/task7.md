@@ -14,3 +14,11 @@
 || DELETE |  /localização/{endereço} |
 || GET |  /localização/{endereço} |
 || GET |  /localização/{endereço} |
+| Produtos | PUT | /produtos/{id} |
+|| DELETE |  /produtos/{id} |
+|| GET |  /produtos/ |
+|| GET |  /produtos/{id} |
+| Classificação | GET | /classificacao/ |
+|| GET |  /classificacao/{id} |
+| Notícias | GET | /noticias/ |
+| Estatísticas | GET | /estatisticas/ |
