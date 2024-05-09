@@ -43,7 +43,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/loginRequest'
+              $ref: '#/components/schemas/login'
       responses:
         '200':
           description: ok
@@ -69,12 +69,12 @@ paths:
       responses:
         '200':
           description: User successfully obtained!
-          # content:
-          #   application/json:
-          #     schema:
-          #       type: array
-          #       items:
-          #         $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/login'
         '400':
           description: Invalid id
         '404':
@@ -154,7 +154,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/loginRequest'
+              $ref: '#/components/schemas/login'
       responses:
         '200':
           description: Profile added successfully!
@@ -180,12 +180,12 @@ paths:
       responses:
         '200':
           description: Profile obtained successfully!
-          # content:
-          #   application/json:
-          #     schema:
-          #       type: array
-          #       items:
-          #         $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/login'
         '400':
           description: Invalid id
         '404':
@@ -269,7 +269,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/localizacaoRequest'
+              $ref: '#/components/schemas/localizacao'
       responses:
         '200':
           description: Location added successfully!
@@ -300,7 +300,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/localizacaoRequest'
+                  $ref: '#/components/schemas/localizacao'
         '400':
           description: Invalid id
         '404':
@@ -410,12 +410,12 @@ paths:
       responses:
         '200':
           description: Product obtained successfully!
-          # content:
-          #   application/json:
-          #     schema:
-          #       type: array
-          #       items:
-          #         $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProdutosResponse'
         '400':
           description: Invalid id
         '404':
@@ -525,12 +525,12 @@ paths:
       responses:
         '200':
           description: Feedback successfully obtained!
-          # content:
-          #   application/json:
-          #     schema:
-          #       type: array
-          #       items:
-          #         $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FeedBackResponse'
         '400':
           description: Invalid id
         '404':
@@ -640,12 +640,12 @@ paths:
       responses:
         '200':
           description: News obtained successfully!
-          # content:
-            # application/json:
-            #   schema:
-            #     type: array
-            #     items:
-            #       $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NoticiasResponse'
         '400':
           description: Invalid id
         '404':
@@ -772,12 +772,12 @@ paths:
       responses:
         '200':
           description: Statistics obtained successfully!
-          # content:
-          #   application/json:
-          #     schema:
-          #       type: array
-          #       items:
-          #         $ref: '#/components/schemas/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EstatisticasResponse'
         '400':
           description: Invalid id
         '404':
@@ -824,7 +824,7 @@ components:
       type: string
       example: password123
   
-    loginRequest:
+    login:
       type: object
       required:
         - username
@@ -846,7 +846,7 @@ components:
       type: string
       example: Telheiras
   
-    localizacaoRequest:
+    localizacao:
       type: object
       required:
         - username
@@ -854,6 +854,34 @@ components:
       properties:
         location:
           $ref: '#/components/schemas/Location'
+          
+    ProdutosResponse:
+      type: object
+      properties:
+        produtos:
+          type: string
+          example: "Carne de Vaca, Carne de Porco, Bife da Vazia"
+          
+    FeedBackResponse:
+      type: object
+      properties:
+        FeedBack:
+          type: string
+          example: "Carne de Vaca tinha um bom preço e uma ótima qualidade"
+          
+    NoticiasResponse:
+      type: object
+      properties:
+        Noticia:
+          type: string
+          example: "Carne de Vaca em promoção!! 20% de Desconto, aprovite já!"
+          
+    EstatisticasResponse:
+      type: object
+      properties:
+        Estatisticas:
+          type: string
+          example: "30% das pessoas compraram Carne de Vaca e 50% compraram Carne de Porco"
 
     # localizacaoResponse:
     #   type: object
